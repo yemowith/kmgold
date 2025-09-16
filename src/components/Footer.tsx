@@ -1,5 +1,13 @@
-import React from 'react';
-import { Mail, Phone, MapPin, Facebook, Instagram, Twitter, Youtube } from 'lucide-react';
+import React from "react";
+import {
+  Mail,
+  Phone,
+  MapPin,
+  Facebook,
+  Instagram,
+  Twitter,
+  Youtube,
+} from "lucide-react";
 
 const Footer: React.FC = () => {
   return (
@@ -9,8 +17,12 @@ const Footer: React.FC = () => {
         <div className="max-w-7xl mx-auto px-4 py-8">
           <div className="flex flex-col md:flex-row items-center justify-between gap-4">
             <div>
-              <h3 className="text-xl font-semibold mb-2">Bültenimize Katılın</h3>
-              <p className="text-blue-100">Haberler ve güncellemeler almak için e-posta adresinizi kaydedin</p>
+              <h3 className="text-xl font-semibold mb-2">
+                Bültenimize Katılın
+              </h3>
+              <p className="text-blue-100">
+                Haberler ve güncellemeler almak için e-posta adresinizi kaydedin
+              </p>
             </div>
             <div className="flex gap-2 w-full md:w-auto">
               <input
@@ -37,18 +49,17 @@ const Footer: React.FC = () => {
               </h2>
             </div>
             <p className="text-gray-400 mb-4">
-              KM Gold Tic. ve Tic. Ltd. Şti.
-              Merkez Mah. Söğütözü Cd. No: 65
-              Çankaya / ANKARA
+              Yenibosna Merkez Mah. Kuyumcukent Sok. Kuyumcukent No:4 İç
+              Kapı:Z131 Bahçelievler - İstanbul
             </p>
             <div className="space-y-2 text-sm text-gray-400">
               <div className="flex items-center gap-2">
                 <Phone className="w-4 h-4" />
-                <span>Vergi No: 431 118 75 56</span>
+                <span>Vergi No: 0000000</span>
               </div>
               <div className="flex items-center gap-2">
                 <Mail className="w-4 h-4" />
-                <span>Sicil no: 870005</span>
+                <span>Sicil no: 00000</span>
               </div>
             </div>
           </div>
@@ -57,11 +68,31 @@ const Footer: React.FC = () => {
           <div>
             <h3 className="text-lg font-semibold mb-4">KURUMSAL</h3>
             <ul className="space-y-2 text-gray-400">
-              <li><a href="#" className="hover:text-white transition-colors">Hakkımızda</a></li>
-              <li><a href="#" className="hover:text-white transition-colors">Belgeler</a></li>
-              <li><a href="#" className="hover:text-white transition-colors">KVK</a></li>
-              <li><a href="#" className="hover:text-white transition-colors">Kullanma Merry</a></li>
-              <li><a href="#" className="hover:text-white transition-colors">Yorumlar</a></li>
+              <li>
+                <a href="#" className="hover:text-white transition-colors">
+                  Hakkımızda
+                </a>
+              </li>
+              <li>
+                <a href="#" className="hover:text-white transition-colors">
+                  Belgeler
+                </a>
+              </li>
+              <li>
+                <a href="#" className="hover:text-white transition-colors">
+                  KVK
+                </a>
+              </li>
+              <li>
+                <a href="#" className="hover:text-white transition-colors">
+                  Kullanma Merry
+                </a>
+              </li>
+              <li>
+                <a href="#" className="hover:text-white transition-colors">
+                  Yorumlar
+                </a>
+              </li>
             </ul>
           </div>
 
@@ -69,12 +100,36 @@ const Footer: React.FC = () => {
           <div>
             <h3 className="text-lg font-semibold mb-4">KATEGORİLER</h3>
             <ul className="space-y-2 text-gray-400">
-              <li><a href="#" className="hover:text-white transition-colors">Gram Külçe Altın</a></li>
-              <li><a href="#" className="hover:text-white transition-colors">Gram Külçe Gümüş</a></li>
-              <li><a href="#" className="hover:text-white transition-colors">Ziynet Altın</a></li>
-              <li><a href="#" className="hover:text-white transition-colors">Hesaplı Altın Havale</a></li>
-              <li><a href="#" className="hover:text-white transition-colors">Hesaptan Fırlar Altına</a></li>
-              <li><a href="#" className="hover:text-white transition-colors">Düzenli Birikim</a></li>
+              <li>
+                <a href="#" className="hover:text-white transition-colors">
+                  Gram Külçe Altın
+                </a>
+              </li>
+              <li>
+                <a href="#" className="hover:text-white transition-colors">
+                  Gram Külçe Gümüş
+                </a>
+              </li>
+              <li>
+                <a href="#" className="hover:text-white transition-colors">
+                  Ziynet Altın
+                </a>
+              </li>
+              <li>
+                <a href="#" className="hover:text-white transition-colors">
+                  Hesaplı Altın Havale
+                </a>
+              </li>
+              <li>
+                <a href="#" className="hover:text-white transition-colors">
+                  Hesaptan Fırlar Altına
+                </a>
+              </li>
+              <li>
+                <a href="#" className="hover:text-white transition-colors">
+                  Düzenli Birikim
+                </a>
+              </li>
             </ul>
           </div>
 
@@ -103,16 +158,28 @@ const Footer: React.FC = () => {
             <div className="flex items-center gap-4">
               <span className="text-gray-400">Bizi Takip Edin:</span>
               <div className="flex gap-3">
-                <a href="#" className="text-gray-400 hover:text-white transition-colors">
+                <a
+                  href="#"
+                  className="text-gray-400 hover:text-white transition-colors"
+                >
                   <Facebook className="w-5 h-5" />
                 </a>
-                <a href="#" className="text-gray-400 hover:text-white transition-colors">
+                <a
+                  href="#"
+                  className="text-gray-400 hover:text-white transition-colors"
+                >
                   <Instagram className="w-5 h-5" />
                 </a>
-                <a href="#" className="text-gray-400 hover:text-white transition-colors">
+                <a
+                  href="#"
+                  className="text-gray-400 hover:text-white transition-colors"
+                >
                   <Twitter className="w-5 h-5" />
                 </a>
-                <a href="#" className="text-gray-400 hover:text-white transition-colors">
+                <a
+                  href="#"
+                  className="text-gray-400 hover:text-white transition-colors"
+                >
                   <Youtube className="w-5 h-5" />
                 </a>
               </div>
@@ -121,8 +188,11 @@ const Footer: React.FC = () => {
             <div className="flex items-center gap-2">
               <span className="text-gray-400 text-sm">Güvenli Ödeme:</span>
               <div className="flex gap-1">
-                {['VISA', 'MC', 'AE', 'DK', 'MP', 'AP'].map((card) => (
-                  <div key={card} className="bg-white text-gray-900 text-xs px-2 py-1 rounded">
+                {["VISA", "MC", "AE", "DK", "MP", "AP"].map((card) => (
+                  <div
+                    key={card}
+                    className="bg-white text-gray-900 text-xs px-2 py-1 rounded"
+                  >
                     {card}
                   </div>
                 ))}
