@@ -1,4 +1,4 @@
-import { Product } from '../types/Product';
+import { Product } from '../types/Product'
 
 export const products: Product[] = [
   {
@@ -12,7 +12,7 @@ export const products: Product[] = [
     inStock: true,
     featured: true,
     likes: 127,
-    isLiked: false
+    isLiked: false,
   },
   {
     id: 2,
@@ -25,7 +25,7 @@ export const products: Product[] = [
     inStock: true,
     featured: true,
     likes: 89,
-    isLiked: false
+    isLiked: false,
   },
   {
     id: 3,
@@ -38,12 +38,12 @@ export const products: Product[] = [
     inStock: true,
     featured: true,
     likes: 203,
-    isLiked: false
+    isLiked: false,
   },
   {
     id: 4,
     name: 'KM Gold 10 Gr Kumbaralı Külçe Altın',
-    price: 53627.70,
+    price: 53627.7,
     image: '/gold-km.jpeg',
     category: 'GRAM KÜLÇE ALTIN',
     weight: '10 gram',
@@ -51,64 +51,64 @@ export const products: Product[] = [
     inStock: true,
     featured: true,
     likes: 156,
-    isLiked: false
+    isLiked: false,
   },
   {
     id: 5,
     name: 'Çeyrek Altın',
-    price: 4250.00,
-    originalPrice: 4500.00,
+    price: 4250.0,
+    originalPrice: 4500.0,
     image: '/gold-km.jpeg',
     category: 'ZİYNET ALTIN',
     weight: '1.75 gram',
     purity: '22 ayar',
     inStock: true,
     likes: 78,
-    isLiked: false
+    isLiked: false,
   },
   {
     id: 6,
     name: 'Yarım Altın',
-    price: 8500.00,
+    price: 8500.0,
     image: '/gold-km.jpeg',
     category: 'ZİYNET ALTIN',
     weight: '3.5 gram',
     purity: '22 ayar',
     inStock: true,
     likes: 92,
-    isLiked: false
+    isLiked: false,
   },
   {
     id: 7,
     name: 'Gümüş Bilezik',
-    price: 850.00,
+    price: 850.0,
     image: '/gold-km.jpeg',
     category: 'GRAM KÜLÇE GÜMÜŞ',
     weight: '25 gram',
     purity: '925 ayar',
     inStock: true,
     likes: 45,
-    isLiked: false
+    isLiked: false,
   },
   {
     id: 8,
     name: 'Altın Kolye',
-    price: 12750.00,
+    price: 12750.0,
     image: '/gold-km.jpeg',
     category: 'HESAPTAN FIRIR ALTINA',
     weight: '8 gram',
     purity: '14 ayar',
     inStock: true,
     likes: 134,
-    isLiked: false
-  }
-];
+    isLiked: false,
+  },
+]
 
 export const categories = [
   'GRAM KÜLÇE ALTIN',
   'GRAM KÜLÇE GÜMÜŞ',
   'ZİYNET ALTIN',
   'HESAPLI ALTIN HAVALE',
-  'HESAPTAN FIRIR ALTINA',
-  'DÜZENLİ BİRİKİM'
-];
+  'HESAPTAN FİZİKİ ALTINA',
+  'DÜZENLİ BİRİKİM',
+]
