@@ -95,7 +95,7 @@ export const products: Product[] = [
     name: 'Altın Kolye',
     price: 12750.0,
     image: '/gold-km.jpeg',
-    category: 'HESAPTAN FIRIR ALTINA',
+    category: 'HESAPTAN FİZİKİ ALTINA',
     weight: '8 gram',
     purity: '14 ayar',
     inStock: true,

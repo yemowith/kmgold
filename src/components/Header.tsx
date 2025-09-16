@@ -1,6 +1,6 @@
-import React, { useState } from 'react';
-import { Search, ShoppingCart, User, Menu, X } from 'lucide-react';
-import { CartItem } from '../types/Product';
+import React, { useState } from "react";
+import { Search, ShoppingCart, User, Menu, X } from "lucide-react";
+import { CartItem } from "../types/Product";
 
 interface HeaderProps {
   cartItems: CartItem[];
@@ -9,19 +9,24 @@ interface HeaderProps {
   onLoginClick: () => void;
 }
 
-const Header: React.FC<HeaderProps> = ({ cartItems, onCartClick, onCategoryClick, onLoginClick }) => {
+const Header: React.FC<HeaderProps> = ({
+  cartItems,
+  onCartClick,
+  onCategoryClick,
+  onLoginClick,
+}) => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [isSearchFocused, setIsSearchFocused] = useState(false);
 
   const totalItems = cartItems.reduce((sum, item) => sum + item.quantity, 0);
 
   const categories = [
-    'GRAM KÜLÇE ALTIN',
-    'GRAM KÜLÇE GÜMÜŞ', 
-    'ZİYNET ALTIN',
-    'HESAPLI ALTIN HAVALE',
-    'HESAPTAN FIRIR ALTINA',
-    'DÜZENLİ BİRİKİM'
+    "GRAM KÜLÇE ALTIN",
+    "GRAM KÜLÇE GÜMÜŞ",
+    "ZİYNET ALTIN",
+    "HESAPLI ALTIN HAVALE",
+    "HESAPTAN FİZİKİ ALTINA",
+    "DÜZENLİ BİRİKİM",
   ];
 
   return (
@@ -29,7 +34,10 @@ const Header: React.FC<HeaderProps> = ({ cartItems, onCartClick, onCategoryClick
       {/* Top Banner */}
       <div className="bg-blue-800 text-white text-sm py-2">
         <div className="max-w-7xl mx-auto px-4 flex justify-between items-center">
-          <span>Türkiye'nin Lider Altın Alışverişi Sitesi • Ücretsiz Kargo • Güvenli Alışveriş</span>
+          <span>
+            Türkiye'nin Lider Altın Alışverişi Sitesi • Ücretsiz Kargo • Güvenli
+            Alışveriş
+          </span>
           <div className="flex items-center gap-4">
             <span>₺ KUR GÜNCELLEMESİ: 01:18</span>
           </div>
@@ -48,7 +56,11 @@ const Header: React.FC<HeaderProps> = ({ cartItems, onCartClick, onCategoryClick
 
           {/* Search Bar - Desktop */}
           <div className="hidden md:flex flex-1 max-w-md mx-8">
-            <div className={`flex items-center w-full bg-gray-100 rounded-lg transition-all duration-200 ${isSearchFocused ? 'ring-2 ring-blue-500' : ''}`}>
+            <div
+              className={`flex items-center w-full bg-gray-100 rounded-lg transition-all duration-200 ${
+                isSearchFocused ? "ring-2 ring-blue-500" : ""
+              }`}
+            >
               <Search className="w-5 h-5 text-gray-400 ml-3" />
               <input
                 type="text"
@@ -63,7 +75,7 @@ const Header: React.FC<HeaderProps> = ({ cartItems, onCartClick, onCategoryClick
           {/* Right Actions */}
           <div className="flex items-center gap-4">
             <div className="hidden md:flex items-center gap-4 text-sm">
-              <button 
+              <button
                 onClick={onLoginClick}
                 className="text-gray-600 hover:text-blue-600 transition-colors"
               >
@@ -71,7 +83,7 @@ const Header: React.FC<HeaderProps> = ({ cartItems, onCartClick, onCategoryClick
               </button>
               <span className="text-gray-600">Sepetim (1)</span>
             </div>
-            
+
             {/* User Button - Mobile */}
             <button
               onClick={onLoginClick}
@@ -79,7 +91,7 @@ const Header: React.FC<HeaderProps> = ({ cartItems, onCartClick, onCategoryClick
             >
               <User className="w-6 h-6" />
             </button>
-            
+
             {/* Cart Button */}
             <button
               onClick={onCartClick}
@@ -93,8 +105,15 @@ const Header: React.FC<HeaderProps> = ({ cartItems, onCartClick, onCategoryClick
               )}
             </button>
 
-            <button className="md:hidden p-2" onClick={() => setIsMenuOpen(!isMenuOpen)}>
-              {isMenuOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
+            <button
+              className="md:hidden p-2"
+              onClick={() => setIsMenuOpen(!isMenuOpen)}
+            >
+              {isMenuOpen ? (
+                <X className="w-6 h-6" />
+              ) : (
+                <Menu className="w-6 h-6" />
+              )}
             </button>
           </div>
         </div>
